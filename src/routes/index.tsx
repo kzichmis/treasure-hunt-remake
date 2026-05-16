@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/wertkammer-logo.png";
-import { Gem, Phone, MessageCircle, Mail, ShieldCheck, Banknote, Eye, Home, Check } from "lucide-react";
+import imgZinn from "@/assets/cat-zinn.jpg";
+import imgMuenzen from "@/assets/cat-muenzen.jpg";
+import imgLuxusuhren from "@/assets/cat-luxusuhren.jpg";
+import imgBestecke from "@/assets/cat-bestecke.jpg";
+import imgTeppiche from "@/assets/cat-teppiche.jpg";
+import imgPelze from "@/assets/cat-pelze.jpg";
+import imgBronze from "@/assets/cat-bronzefiguren.jpg";
+import imgSchmuck from "@/assets/cat-schmuck.jpg";
+import imgModeschmuck from "@/assets/cat-modeschmuck.jpg";
+import imgPorzellan from "@/assets/cat-porzellan.jpg";
+import imgKleinmoebel from "@/assets/cat-kleinmoebel.jpg";
+import imgGemaelde from "@/assets/cat-gemaelde.jpg";
+import { Phone, MessageCircle, Mail, ShieldCheck, Banknote, Eye, Home, Check } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,11 +30,19 @@ const PHONE_DISPLAY = "+49 152 27 03 28 58";
 const PHONE_TEL = "+4915227032858";
 const WHATSAPP = "https://wa.me/4915227032858?text=Hallo%20Wertkammer%2C%20ich%20m%C3%B6chte%20gerne%20folgende%20St%C3%BCcke%20bewerten%20lassen%3A";
 
-const ankaufLinks = [
-  "Zinn", "Münzen", "Luxusuhren", "Bestecke", "Teppiche", "Pelze",
-];
-const ankaufRechts = [
-  "Bronzefiguren", "Gold & Silberschmuck", "Modeschmuck", "Porzellan", "Antike Kleinmöbel", "Gemälde",
+const ankaufItems = [
+  { name: "Zinn", img: imgZinn },
+  { name: "Münzen", img: imgMuenzen },
+  { name: "Luxusuhren", img: imgLuxusuhren },
+  { name: "Bestecke", img: imgBestecke },
+  { name: "Teppiche", img: imgTeppiche },
+  { name: "Pelze", img: imgPelze },
+  { name: "Bronzefiguren", img: imgBronze },
+  { name: "Gold & Silberschmuck", img: imgSchmuck },
+  { name: "Modeschmuck", img: imgModeschmuck },
+  { name: "Porzellan", img: imgPorzellan },
+  { name: "Antike Kleinmöbel", img: imgKleinmoebel },
+  { name: "Gemälde", img: imgGemaelde },
 ];
 
 const promises = [
