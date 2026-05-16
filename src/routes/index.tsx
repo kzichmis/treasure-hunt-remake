@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/wertkammer-logo.png";
-import { Gem, Phone, MessageCircle, Mail, ShieldCheck, Banknote, Eye, Home, Check } from "lucide-react";
+import imgZinn from "@/assets/cat-zinn.jpg";
+import imgMuenzen from "@/assets/cat-muenzen.jpg";
+import imgLuxusuhren from "@/assets/cat-luxusuhren.jpg";
+import imgBestecke from "@/assets/cat-bestecke.jpg";
+import imgTeppiche from "@/assets/cat-teppiche.jpg";
+import imgPelze from "@/assets/cat-pelze.jpg";
+import imgBronze from "@/assets/cat-bronzefiguren.jpg";
+import imgSchmuck from "@/assets/cat-schmuck.jpg";
+import imgModeschmuck from "@/assets/cat-modeschmuck.jpg";
+import imgPorzellan from "@/assets/cat-porzellan.jpg";
+import imgKleinmoebel from "@/assets/cat-kleinmoebel.jpg";
+import imgGemaelde from "@/assets/cat-gemaelde.jpg";
+import { Phone, MessageCircle, Mail, ShieldCheck, Banknote, Eye, Home, Check } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,11 +30,19 @@ const PHONE_DISPLAY = "+49 152 27 03 28 58";
 const PHONE_TEL = "+4915227032858";
 const WHATSAPP = "https://wa.me/4915227032858?text=Hallo%20Wertkammer%2C%20ich%20m%C3%B6chte%20gerne%20folgende%20St%C3%BCcke%20bewerten%20lassen%3A";
 
-const ankaufLinks = [
-  "Zinn", "Münzen", "Luxusuhren", "Bestecke", "Teppiche", "Pelze",
-];
-const ankaufRechts = [
-  "Bronzefiguren", "Gold & Silberschmuck", "Modeschmuck", "Porzellan", "Antike Kleinmöbel", "Gemälde",
+const ankaufItems = [
+  { name: "Zinn", img: imgZinn },
+  { name: "Münzen", img: imgMuenzen },
+  { name: "Luxusuhren", img: imgLuxusuhren },
+  { name: "Bestecke", img: imgBestecke },
+  { name: "Teppiche", img: imgTeppiche },
+  { name: "Pelze", img: imgPelze },
+  { name: "Bronzefiguren", img: imgBronze },
+  { name: "Gold & Silberschmuck", img: imgSchmuck },
+  { name: "Modeschmuck", img: imgModeschmuck },
+  { name: "Porzellan", img: imgPorzellan },
+  { name: "Antike Kleinmöbel", img: imgKleinmoebel },
+  { name: "Gemälde", img: imgGemaelde },
 ];
 
 const promises = [
@@ -87,12 +107,24 @@ function Index() {
             <div className="gold-divider mt-8 !h-12" />
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-x-16 gap-y-4 max-w-2xl mx-auto font-serif text-2xl md:text-3xl">
-            {[...ankaufLinks, ...ankaufRechts].map((item) => (
-              <div key={item} className="flex items-center gap-4 border-b border-gold/15 pb-3">
-                <Gem className="w-4 h-4 text-gold shrink-0" />
-                <span>{item}</span>
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {ankaufItems.map((item) => (
+              <figure key={item.name} className="group relative overflow-hidden border border-gold/20 bg-card/40">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    width={768}
+                    height={768}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                <figcaption className="absolute bottom-0 left-0 right-0 p-4 text-center">
+                  <span className="font-serif text-lg md:text-xl text-gold">{item.name}</span>
+                </figcaption>
+              </figure>
             ))}
           </div>
 
