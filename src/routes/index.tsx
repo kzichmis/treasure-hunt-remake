@@ -29,17 +29,17 @@ const PHONE_TEL = "+4915227032858";
 const WHATSAPP = "https://wa.me/4915227032858?text=Hallo%20Wertkammer%2C%20ich%20m%C3%B6chte%20gerne%20folgende%20St%C3%BCcke%20bewerten%20lassen%3A";
 
 const ankaufItems = [
-  { name: "Zinn", img: imgZinn },
-  { name: "Münzen", img: imgMuenzen },
-  { name: "Luxusuhren", img: imgLuxusuhren },
-  { name: "Bestecke", img: imgBestecke },
-  { name: "Bronzefiguren", img: imgBronze },
-  { name: "Gold & Silberschmuck", img: imgSchmuck },
-  { name: "Zahngold", img: imgSchmuck },
-  { name: "Modeschmuck", img: imgModeschmuck },
-  { name: "Porzellan", img: imgPorzellan },
-  { name: "Antike Kleinmöbel", img: imgKleinmoebel },
-  { name: "Gemälde", img: imgGemaelde },
+  { name: "Zinn", img: imgZinn, desc: "Ankauf von Zinn in sämtlichen Ausführungen, einschließlich Trinkgefäßen, Krügen, Tellern und Dekorationsartikeln. Wir erwerben alle Arten von Zinnlegierungen." },
+  { name: "Münzen", img: imgMuenzen, desc: "Wir bieten eine kostenlose und unverbindliche Bewertung Ihrer Goldmünzen, Goldbarren oder Goldmedaillen an. Bei Einigung erhalten Sie den Betrag umgehend in bar ausgezahlt." },
+  { name: "Luxusuhren", img: imgLuxusuhren, desc: "Ankauf von Luxusuhren namhafter Marken." },
+  { name: "Bestecke", img: imgBestecke, desc: "Ankauf von Silberbesteck jeglicher Art in sämtlichen Legierungen, einschließlich – jedoch nicht beschränkt auf – 80, 90, 100, 120, 800, 835, 900, 925, 950 und 999." },
+  { name: "Bronzefiguren", img: imgBronze, desc: "Ankauf von Bronze-, Messing- und Kupferfiguren sowie Statuen." },
+  { name: "Gold & Silberschmuck", img: imgSchmuck, desc: "Ankauf von Silberschmuck jeglicher Art in sämtlichen Legierungen, unabhängig von Vollständigkeit, Verarbeitung oder Beschädigungen. Auch Ihren Goldschmuck bewerten wir kostenlos und unverbindlich – sei er defekt, unvollständig oder angelaufen. Bei Einigung erfolgt die Auszahlung umgehend in bar." },
+  { name: "Zahngold", img: imgSchmuck, desc: "Ankauf von Zahngold in sämtlichen Legierungen, unabhängig vom Zustand – mit oder ohne Zähne, mit Verarbeitungen oder möglichen Beschädigungen." },
+  { name: "Modeschmuck", img: imgModeschmuck, desc: "Ankauf von Modeschmuck – ob schlicht und klassisch oder extravagant und einzigartig, unabhängig von der Originalmarke. Wir bieten Ihnen eine kompetente und seriöse Erwerbsplattform." },
+  { name: "Porzellan", img: imgPorzellan, desc: "Ankauf von Porzellanservices, einschließlich Tee-, Kaffee-, Mokka-, Tafelservices sowie Servierplatten." },
+  { name: "Antike Kleinmöbel", img: imgKleinmoebel, desc: "Ankauf seltener Antiquitäten und Kunst, die sowohl historische Bedeutung als auch materiellen Wert repräsentieren." },
+  { name: "Gemälde", img: imgGemaelde, desc: "Ankauf von Gemälden jeglicher Art, einschließlich antiker und moderner Werke sowie abstrakter Kunst." },
 ];
 
 const promises = [
@@ -104,22 +104,22 @@ function Index() {
             <div className="gold-divider mt-8 !h-12" />
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {ankaufItems.map((item) => (
-              <figure key={item.name} className="group relative overflow-hidden border border-gold/20 bg-card/40">
-                <div className="aspect-square overflow-hidden">
+              <figure key={item.name} className="group relative overflow-hidden border border-gold/20 bg-card/40 flex flex-col">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={item.img}
                     alt={item.name}
                     width={768}
-                    height={768}
+                    height={576}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-                <figcaption className="absolute bottom-0 left-0 right-0 p-4 text-center">
-                  <span className="font-serif text-lg md:text-xl text-gold">{item.name}</span>
+                <figcaption className="p-5 flex flex-col gap-2">
+                  <span className="font-serif text-xl text-gold">{item.name}</span>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </figcaption>
               </figure>
             ))}
