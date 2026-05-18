@@ -35,6 +35,7 @@ const ankaufItems = [
   { name: "Bestecke", img: imgBestecke },
   { name: "Bronzefiguren", img: imgBronze },
   { name: "Gold & Silberschmuck", img: imgSchmuck },
+  { name: "Zahngold", img: imgSchmuck },
   { name: "Modeschmuck", img: imgModeschmuck },
   { name: "Porzellan", img: imgPorzellan },
   { name: "Antike Kleinmöbel", img: imgKleinmoebel },
