@@ -4,8 +4,6 @@ import imgZinn from "@/assets/cat-zinn.jpg";
 import imgMuenzen from "@/assets/cat-muenzen.jpg";
 import imgLuxusuhren from "@/assets/cat-luxusuhren.jpg";
 import imgBestecke from "@/assets/cat-bestecke.jpg";
-import imgTeppiche from "@/assets/cat-teppiche.jpg";
-import imgPelze from "@/assets/cat-pelze.jpg";
 import imgBronze from "@/assets/cat-bronzefiguren.jpg";
 import imgSchmuck from "@/assets/cat-schmuck.jpg";
 import imgModeschmuck from "@/assets/cat-modeschmuck.jpg";
