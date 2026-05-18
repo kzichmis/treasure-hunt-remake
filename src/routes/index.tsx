@@ -104,22 +104,22 @@ function Index() {
             <div className="gold-divider mt-8 !h-12" />
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {ankaufItems.map((item) => (
-              <figure key={item.name} className="group relative overflow-hidden border border-gold/20 bg-card/40">
-                <div className="aspect-square overflow-hidden">
+              <figure key={item.name} className="group relative overflow-hidden border border-gold/20 bg-card/40 flex flex-col">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={item.img}
                     alt={item.name}
                     width={768}
-                    height={768}
+                    height={576}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-                <figcaption className="absolute bottom-0 left-0 right-0 p-4 text-center">
-                  <span className="font-serif text-lg md:text-xl text-gold">{item.name}</span>
+                <figcaption className="p-5 flex flex-col gap-2">
+                  <span className="font-serif text-xl text-gold">{item.name}</span>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </figcaption>
               </figure>
             ))}
