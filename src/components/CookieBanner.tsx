@@ -25,7 +25,7 @@ export function CookieBanner() {
           <p className="text-muted-foreground leading-relaxed">
             Wir verwenden Cookies, um diese Website bestmöglich zu betreiben. Durch die Nutzung
             stimmen Sie der Verwendung notwendiger Cookies zu. Weitere Informationen finden Sie im{" "}
-            <a href="/impressum" className="text-gold underline">Impressum</a>.
+            <a href="/datenschutz" className="text-gold underline">Datenschutzerklärung</a>.
           </p>
         </div>
         <div className="flex gap-3 shrink-0">

@@ -237,6 +237,7 @@ function Index() {
           </div>
           <div className="flex items-center gap-4 text-xs">
             <Link to="/impressum" className="hover:text-gold transition-colors">Impressum</Link>
+            <Link to="/datenschutz" className="hover:text-gold transition-colors">Datenschutz</Link>
             <span>© {new Date().getFullYear()} Wertkammer. Alle Rechte vorbehalten.</span>
           </div>
         </div>
