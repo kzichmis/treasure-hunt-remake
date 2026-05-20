@@ -6,6 +6,7 @@ import imgLuxusuhren from "@/assets/cat-luxusuhren.jpg";
 import imgBestecke from "@/assets/cat-bestecke.jpg";
 import imgBronze from "@/assets/cat-bronzefiguren.jpg";
 import imgSchmuck from "@/assets/cat-schmuck.jpg";
+import imgZahngold from "@/assets/cat-zahngold.jpg";
 import imgModeschmuck from "@/assets/cat-modeschmuck.jpg";
 import imgPorzellan from "@/assets/cat-porzellan.jpg";
 import imgKleinmoebel from "@/assets/cat-kleinmoebel.jpg";
