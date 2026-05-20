@@ -207,10 +207,10 @@ function Index() {
               <p className="font-serif text-lg mb-1">Telefon</p>
               <p className="text-sm text-muted-foreground">Mo–Sa, 9–20 Uhr</p>
             </a>
-            <a href="mailto:kontakt@wertkammer.de" className="bg-background p-8 hover:bg-secondary transition-colors">
+            <a href="mailto:wertkammer@hotmail.com" className="bg-background p-8 hover:bg-secondary transition-colors">
               <Mail className="w-7 h-7 text-gold mx-auto mb-4" strokeWidth={1.2} />
               <p className="font-serif text-lg mb-1">E-Mail</p>
-              <p className="text-sm text-muted-foreground">kontakt@wertkammer.de</p>
+              <p className="text-sm text-muted-foreground">wertkammer@hotmail.com</p>
             </a>
           </div>
 
