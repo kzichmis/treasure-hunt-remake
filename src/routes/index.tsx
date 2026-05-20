@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import logo from "@/assets/wertkammer-logo.png";
 import imgZinn from "@/assets/cat-zinn.jpg";
 import imgMuenzen from "@/assets/cat-muenzen.jpg";
@@ -234,7 +234,10 @@ function Index() {
             <span className="font-serif text-base text-foreground">Wertkammer</span>
             <span className="text-muted-foreground/60">· Bundesweiter Ankauf</span>
           </div>
-          <p className="text-xs">© {new Date().getFullYear()} Wertkammer. Alle Rechte vorbehalten.</p>
+          <div className="flex items-center gap-4 text-xs">
+            <Link to="/impressum" className="hover:text-gold transition-colors">Impressum</Link>
+            <span>© {new Date().getFullYear()} Wertkammer. Alle Rechte vorbehalten.</span>
+          </div>
         </div>
       </footer>
     </div>
