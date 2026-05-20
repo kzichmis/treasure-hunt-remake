@@ -41,7 +41,7 @@ function ImpressumPage() {
 
           <div>
             <h2 className="font-serif text-xl text-gold mb-2">Kontakt</h2>
-            <p>E-Mail: kontakt@wertkammer.de</p>
+            <p>E-Mail: wertkammer@hotmail.com</p>
           </div>
 
           <div>
