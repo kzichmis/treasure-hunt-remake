@@ -6,6 +6,7 @@ import imgLuxusuhren from "@/assets/cat-luxusuhren.jpg";
 import imgBestecke from "@/assets/cat-bestecke.jpg";
 import imgBronze from "@/assets/cat-bronzefiguren.jpg";
 import imgSchmuck from "@/assets/cat-schmuck.jpg";
+import imgZahngold from "@/assets/cat-zahngold.jpg";
 import imgModeschmuck from "@/assets/cat-modeschmuck.jpg";
 import imgPorzellan from "@/assets/cat-porzellan.jpg";
 import imgKleinmoebel from "@/assets/cat-kleinmoebel.jpg";
@@ -35,7 +36,7 @@ const ankaufItems = [
   { name: "Bestecke", img: imgBestecke, desc: "Ankauf von Silberbesteck jeglicher Art in sämtlichen Legierungen, einschließlich – jedoch nicht beschränkt auf – 80, 90, 100, 120, 800, 835, 900, 925, 950 und 999." },
   { name: "Bronzefiguren", img: imgBronze, desc: "Ankauf von Bronze-, Messing- und Kupferfiguren sowie Statuen." },
   { name: "Gold & Silberschmuck", img: imgSchmuck, desc: "Ankauf von Silberschmuck jeglicher Art in sämtlichen Legierungen, unabhängig von Vollständigkeit, Verarbeitung oder Beschädigungen. Auch Ihren Goldschmuck bewerten wir kostenlos und unverbindlich – sei er defekt, unvollständig oder angelaufen. Bei Einigung erfolgt die Auszahlung umgehend in bar." },
-  { name: "Zahngold", img: imgSchmuck, desc: "Ankauf von Zahngold in sämtlichen Legierungen, unabhängig vom Zustand – mit oder ohne Zähne, mit Verarbeitungen oder möglichen Beschädigungen." },
+  { name: "Zahngold", img: imgZahngold, desc: "Ankauf von Zahngold in sämtlichen Legierungen, unabhängig vom Zustand – mit oder ohne Zähne, mit Verarbeitungen oder möglichen Beschädigungen." },
   { name: "Modeschmuck", img: imgModeschmuck, desc: "Ankauf von Modeschmuck – ob schlicht und klassisch oder extravagant und einzigartig, unabhängig von der Originalmarke. Wir bieten Ihnen eine kompetente und seriöse Erwerbsplattform." },
   { name: "Porzellan", img: imgPorzellan, desc: "Ankauf von Porzellanservices, einschließlich Tee-, Kaffee-, Mokka-, Tafelservices sowie Servierplatten." },
   { name: "Antike Kleinmöbel", img: imgKleinmoebel, desc: "Ankauf seltener Antiquitäten und Kunst, die sowohl historische Bedeutung als auch materiellen Wert repräsentieren." },
